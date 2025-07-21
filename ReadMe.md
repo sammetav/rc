@@ -12,4 +12,4 @@ A reactive Java application built with **Project Reactor** and **Spring Data R2D
 
 ### why R2DBC?
 
-- R2DBC uses reactive streams, enabling your app to handle many database calls without blocking threads — perfect for reactive frameworks like Spring WebFlux or Project Reactor
+- R2DBC (Reactive Relational Database Connectivity) is the obvious choice for database access in a reactive world because it is designed for non-blocking, asynchronous I/O operations, making it ideal for reactive applications. Unlike traditional JDBC, which blocks threads during database operations, R2DBC uses reactive streams to handle queries and results, allowing for better scalability and resource utilization. It integrates seamlessly with reactive frameworks like Spring WebFlux and Project Reactor, providing a consistent, non-blocking API. R2DBC ensures that database interactions remain non-blocking and efficient, making it the natural fit for modern, high-performance, reactive applications.
