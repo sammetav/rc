@@ -29,4 +29,9 @@ public class PetController {
     public Mono<Pet> createPet(@RequestBody Pet pet) {
         return petService.createPet(pet);
     }
+
+    @GetMapping("/outside-zone")
+    public Flux<Pet> findAllOutsideZone() {
+        return petService.findAllOutsideZone();
+    }
 }

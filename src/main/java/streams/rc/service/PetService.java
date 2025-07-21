@@ -24,4 +24,8 @@ public class PetService {
     public Mono<Pet> createPet(Pet pet) {
         return petRepository.save(pet);
     }
+
+    public Flux<Pet> findAllOutsideZone() {
+        return petRepository.findAllByInZoneIsFalse();
+    }
 }
